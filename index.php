@@ -1,25 +1,30 @@
 <?php
     include 'functions.php';
 ?>
-
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Silverjack </title>
+        <title><h1> Silverjack </h1></title>
     </head>
     <body>
         <div>
             <?php
-                play();
-                
+            play();
+            
             ?>
             <div>
                 <?php displayElapsedTime(); ?>
-            <form>
-                <input type = "submit" value = "Spin"/>
-            </form>
+                <form>
+                    <input type = "submit" value = "Spin"/>
+                </form>
             </div>
         </div>
+
     </body>
-</html> 
+    <hr>
+    <footer>
+        CST 336 2018 &copy; Baird, Chi, and Anacleto <br/>
+        Disclaimer: This website is for academic purposes only. <br/>
+        <img src="../cst336/img/csumb_logo.jpg" alt="CSUMB logo" title="This is the CSUMB logo"/>
+    </footer>
+</html>
