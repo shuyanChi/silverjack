@@ -1,30 +1,32 @@
-<?php
-    include 'functions.php';
+<?php session_start();
+   //session_destroy();
 ?>
+<?php
+    include 'inc/functions.php';
+    include 'timeElapsed.php'; 
+?>
+
+
 <!DOCTYPE html>
 <html>
     <head>
-        <title><h1> Silverjack </h1></title>
+        <title> 777 Slot Machine </title>
+        <style>
+            @import url("css/styles.css");
+        </style>
     </head>
     <body>
-        <div>
+        <div id = "main">
             <?php
-            play();
-            
+                $start = microtime(true); 
+                play();
+                displayElapsedTime();
             ?>
             <div>
-                <?php displayElapsedTime(); ?>
-                <form>
-                    <input type = "submit" value = "Spin"/>
-                </form>
+            <form>
+                <input type = "submit" value = "Spin"/>
+            </form>
             </div>
         </div>
-
     </body>
-    <hr>
-    <footer>
-        CST 336 2018 &copy; Baird, Chi, and Anacleto <br/>
-        Disclaimer: This website is for academic purposes only. <br/>
-        <img src="../cst336/img/csumb_logo.jpg" alt="CSUMB logo" title="This is the CSUMB logo"/>
-    </footer>
-</html>
+</html> 
