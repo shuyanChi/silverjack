@@ -18,7 +18,7 @@
     <body>
         <h1>Super Silver Jack!! Kingdom Hearts Style!! <hr></h1>
         
-        <div class="hand">
+        <div id="layoutDiv2" class="hand">
         <?php
             $start = microtime(true);
 
@@ -31,6 +31,11 @@
             for ($i = 0; $i < 4; $i++) {
                 dealCards($i);
             }
+        ?>
+            </div>
+            <br><br>
+            <div id="layoutDiv2">
+        <?php
             winnerCalc();
             //echo"totals:";
             //print_r($totals);
@@ -42,7 +47,7 @@
         </div>
         
         <footer>
-            <div>
+            <div id="layoutDiv">
                 CST 336 2018 &copy; Baird, Chi, Hernandez and Anacleto<br/>
                 <strong>Disclaimer:</strong> We did not create any of the characters 
                 on this site. 

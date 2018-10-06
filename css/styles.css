@@ -44,3 +44,25 @@ footer img {
     float:none;
 }
 
+#layoutDiv
+{
+    opacity: 0.85;
+    display: inline-block;
+    color: black;
+    text-align: left;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+#layoutDiv2
+{
+    opacity: 0.65;
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
