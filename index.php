@@ -18,12 +18,13 @@
     <body>
         <h1>Super Silver Jack!! Kingdom Hearts Style!! <hr></h1>
         
+        <FORM id="layoutDiv2">
+            <a href="#" class="refresh" onClick="history.go(0)">Play Again</a>
+        </FORM>
+        <br><br>
         <div id="layoutDiv2" class="hand">
         <?php
             $start = microtime(true);
-
-            
-        
         
             buildDeck();
             shuffle($deck);
@@ -33,8 +34,8 @@
             }
         ?>
             </div>
-            <br><br>
-            <div id="layoutDiv2">
+            <br></br>
+        <div id="layoutDiv2" class = "winners">
         <?php
             winnerCalc();
             //echo"totals:";
